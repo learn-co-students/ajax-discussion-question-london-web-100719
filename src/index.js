@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderPerson(person){
     console.log(person.results)
 
-    image.src = person.picture.thumbnail;
+    image.src = person.picture.large;
     fullname.innerText = `${person.name.first} ${person.name.last}`
     email.innerText = person.email;
     street.innerText = `${person.location.street.number}, ${person.location.street.name}`;
